@@ -1,0 +1,927 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Healthcare Video Portfolio｜Multilingual Script, Storyboard & Filming</title>
+  <meta name="description" content="A one-page healthcare video portfolio featuring multilingual script writing, storyboard planning, and filming projects across medtech, telemedicine, long-term care, and smart hospital solutions." />
+  <meta property="og:title" content="Healthcare Video Portfolio｜Multilingual Script, Storyboard & Filming" />
+  <meta property="og:description" content="12 healthcare video projects, 28 language versions, covering script writing, storyboard planning, and filming execution." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --paper: #ffffff;
+      --ink: #172033;
+      --muted: #667085;
+      --line: #e5e7eb;
+      --navy: #1c2f4a;
+      --blue: #315f82;
+      --teal: #2f7d7a;
+      --teal-soft: #e7f3f1;
+      --blue-soft: #e9f0f7;
+      --warm: #f7f2ea;
+      --shadow: 0 18px 50px rgba(28, 47, 74, .10);
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", Arial, sans-serif;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(49, 95, 130, .12), transparent 34rem),
+        radial-gradient(circle at 90% 8%, rgba(47, 125, 122, .12), transparent 30rem),
+        var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      width: min(1160px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(16px);
+      background: rgba(246, 248, 251, .78);
+      border-bottom: 1px solid rgba(229, 231, 235, .75);
+    }
+
+    .topbar-inner {
+      width: min(1160px, calc(100% - 36px));
+      margin: 0 auto;
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 750;
+      letter-spacing: .01em;
+      color: var(--navy);
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--navy), var(--teal));
+      box-shadow: 0 10px 22px rgba(28, 47, 74, .20);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    nav a:hover {
+      color: var(--navy);
+    }
+
+    .hero {
+      padding: 72px 0 38px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.12fr .88fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid rgba(49, 95, 130, .14);
+      background: rgba(255, 255, 255, .72);
+      color: var(--blue);
+      padding: 8px 13px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+
+    h1 {
+      margin: 18px 0 20px;
+      font-size: clamp(40px, 6vw, 76px);
+      line-height: .98;
+      letter-spacing: -.055em;
+      color: var(--navy);
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0;
+      color: #3f4a5f;
+      font-size: clamp(17px, 2vw, 21px);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 44px;
+      padding: 11px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 750;
+      border: 1px solid transparent;
+      transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: var(--navy);
+      color: #fff;
+      box-shadow: 0 12px 24px rgba(28, 47, 74, .18);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, .82);
+      border-color: var(--line);
+      color: var(--navy);
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, .82);
+      border: 1px solid rgba(229, 231, 235, .88);
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    .hero-card-title {
+      margin: 0 0 16px;
+      color: var(--navy);
+      font-size: 15px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .stat {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 18px 14px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 34px;
+      line-height: 1;
+      letter-spacing: -.04em;
+      color: var(--blue);
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 20px;
+    }
+
+    .section-kicker {
+      margin: 0 0 7px;
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0;
+      color: var(--navy);
+      font-size: clamp(28px, 3vw, 42px);
+      letter-spacing: -.035em;
+      line-height: 1.1;
+    }
+
+    .section-note {
+      max-width: 430px;
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0;
+    }
+
+    .capability-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .capability {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: 0 10px 26px rgba(28, 47, 74, .05);
+    }
+
+    .capability .num {
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      background: var(--blue-soft);
+      color: var(--blue);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 850;
+    }
+
+    .capability h3 {
+      margin: 16px 0 8px;
+      color: var(--navy);
+      font-size: 19px;
+      line-height: 1.25;
+    }
+
+    .capability p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 18px 0 22px;
+    }
+
+    .filter-btn {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, .86);
+      color: #344054;
+      border-radius: 999px;
+      padding: 9px 13px;
+      font: inherit;
+      font-size: 14px;
+      font-weight: 720;
+      cursor: pointer;
+    }
+
+    .filter-btn.active {
+      background: var(--navy);
+      color: #fff;
+      border-color: var(--navy);
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .work-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 12px 28px rgba(28, 47, 74, .07);
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    .thumb-wrap {
+      position: relative;
+      background: #d9e1ea;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+    }
+
+    .thumb {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.015);
+      transition: transform .28s ease;
+    }
+
+    .work-card:hover .thumb {
+      transform: scale(1.055);
+    }
+
+    .card-index {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 36px;
+      height: 36px;
+      border-radius: 13px;
+      background: rgba(23, 32, 51, .84);
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 850;
+      backdrop-filter: blur(10px);
+    }
+
+    .card-body {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 12px;
+    }
+
+    .pill {
+      border-radius: 999px;
+      padding: 5px 9px;
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 760;
+      background: var(--blue-soft);
+      color: var(--blue);
+    }
+
+    .pill.role {
+      background: var(--teal-soft);
+      color: var(--teal);
+    }
+
+    .work-card h3 {
+      margin: 0;
+      color: var(--navy);
+      font-size: 19px;
+      line-height: 1.28;
+      letter-spacing: -.018em;
+    }
+
+    .industry {
+      margin: 9px 0 0;
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .summary {
+      margin: 11px 0 16px;
+      color: var(--muted);
+      font-size: 14.5px;
+    }
+
+    .lang-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+      padding-top: 4px;
+    }
+
+    .lang-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      min-width: 42px;
+      padding: 8px 10px;
+      background: #f3f6fa;
+      color: var(--navy);
+      border: 1px solid #e6ebf1;
+      font-size: 13px;
+      font-weight: 850;
+    }
+
+    .lang-links a:hover {
+      background: var(--navy);
+      color: #fff;
+      border-color: var(--navy);
+    }
+
+    .interview-panel {
+      background: linear-gradient(135deg, rgba(28, 47, 74, .96), rgba(47, 125, 122, .92));
+      border-radius: 30px;
+      color: #fff;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .interview-panel .section-kicker,
+    .interview-panel h2 {
+      color: #fff;
+    }
+
+    .talking-points {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .talking-points li {
+      background: rgba(255, 255, 255, .10);
+      border: 1px solid rgba(255, 255, 255, .16);
+      border-radius: 18px;
+      padding: 14px 16px;
+      color: rgba(255, 255, 255, .88);
+    }
+
+    footer {
+      padding: 42px 0 64px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      border-top: 1px solid var(--line);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .portfolio-grid,
+      .capability-grid,
+      .talking-points {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .section-head {
+        display: block;
+      }
+
+      .section-note {
+        margin-top: 10px;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .page,
+      .topbar-inner {
+        width: min(100% - 24px, 1160px);
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 46px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .stat-grid,
+      .portfolio-grid,
+      .capability-grid,
+      .talking-points {
+        grid-template-columns: 1fr;
+      }
+
+      .interview-panel {
+        padding: 22px;
+        border-radius: 24px;
+      }
+    }
+
+    @media print {
+      .topbar,
+      .filters,
+      .hero-actions {
+        display: none;
+      }
+
+      body {
+        background: #fff;
+      }
+
+      .work-card,
+      .capability,
+      .hero-card {
+        break-inside: avoid;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Healthcare Video Portfolio</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#capabilities">Capabilities</a>
+        <a href="#works">Works</a>
+        <a href="#interview">Highlights</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero page">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">Multilingual Video Storytelling｜MedTech & Healthcare</span>
+          <h1>Script, storyboard and filming work for healthcare technology stories.</h1>
+          <p>
+            A one-page portfolio built for interview review. It highlights video projects across corporate brand storytelling,
+            telemedicine, primary care, smart hospital solutions, long-term care, brain health training and veterinary rehabilitation.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#works">View portfolio</a>
+            <a class="btn btn-secondary" href="#interview">Portfolio highlights</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Portfolio summary">
+          <p class="hero-card-title">Portfolio at a glance</p>
+          <div class="stat-grid">
+            <div class="stat">
+              <strong>12</strong>
+              <span>Video projects</span>
+            </div>
+            <div class="stat">
+              <strong>28</strong>
+              <span>Language versions</span>
+            </div>
+            <div class="stat">
+              <strong>5</strong>
+              <span>Languages: CH / EN / TH / JP / ID</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="capabilities" class="page">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Capability map</p>
+          <h2>Three levels of contribution</h2>
+        </div>
+        <p class="section-note">
+          The portfolio is structured by production responsibility, so reviewers can immediately understand the scope of contribution.
+        </p>
+      </div>
+
+      <div class="capability-grid">
+        <article class="capability">
+          <span class="num">01</span>
+          <h3>Script Writing</h3>
+          <p>Turn product value, healthcare scenarios and stakeholder pain points into clear multilingual video narratives.</p>
+        </article>
+        <article class="capability">
+          <span class="num">02</span>
+          <h3>Script & Storyboard Planning</h3>
+          <p>Plan story flow, visual sequence and scene logic before production, connecting product features with real use cases.</p>
+        </article>
+        <article class="capability">
+          <span class="num">03</span>
+          <h3>Script, Storyboard Development & Filming</h3>
+          <p>Support the complete storytelling process from concept and storyboard to field execution and public-facing output.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="works" class="page">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Selected works</p>
+          <h2>12 projects across healthcare, medtech and care services</h2>
+        </div>
+        <p class="section-note">
+          Use the filters to review by responsibility level. Each project card links directly to its available language versions.
+        </p>
+      </div>
+
+      <div class="filters" aria-label="Portfolio filters">
+        <button class="filter-btn active" type="button" data-filter="All">All</button>
+        <button class="filter-btn" type="button" data-filter="Script Writing">Script Writing</button>
+        <button class="filter-btn" type="button" data-filter="Script & Storyboard Planning">Storyboard Planning</button>
+        <button class="filter-btn" type="button" data-filter="Script, Storyboard Development & Filming">Development & Filming</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid"></div>
+    </section>
+
+    <section id="interview" class="page">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Portfolio highlights</p>
+          <h2>What this portfolio demonstrates</h2>
+        </div>
+      </div>
+      <div class="interview-panel">
+        <ul class="talking-points">
+          <li><strong>Commercial translation:</strong> I helped convert healthcare technology and field scenarios into content that non-technical stakeholders can understand.</li>
+          <li><strong>Regional communication:</strong> The portfolio includes CH, EN, TH, JP and ID versions, showing cross-market content localization experience.</li>
+          <li><strong>Execution depth:</strong> My scope expanded from script writing to storyboard planning and filming execution, depending on project needs.</li>
+          <li><strong>Industry focus:</strong> The cases cover smart hospitals, telemedicine, primary care, long-term care, brain health and rehabilitation services.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page">
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Healthcare Video Portfolio</span>
+      <span>Built as a one-page interview portfolio. Replace this line with your name, email or LinkedIn URL.</span>
+    </div>
+  </footer>
+
+  <script>
+    const projects = [
+  {
+    "id": 1,
+    "category": "Script Writing",
+    "title": "Company Video",
+    "industry": "Corporate / MedTech Brand Story",
+    "role": "Script Writing",
+    "summary": "Built multilingual corporate video scripts to introduce company positioning and healthcare technology value propositions.",
+    "links": {
+      "EN": "https://youtu.be/sBOvty2PO7w",
+      "TH": "https://youtu.be/hobkT0TN_jc",
+      "JP": "https://youtu.be/EEaZc2_eqPk"
+    }
+  },
+  {
+    "id": 2,
+    "category": "Script Writing",
+    "title": "Health Equity through Telemedicine: Thailand Primary Care",
+    "industry": "Telemedicine / Health Equity / Primary Care",
+    "role": "Script Writing",
+    "summary": "Structured a cross-market healthcare narrative around telemedicine access, primary care delivery, and health equity.",
+    "links": {
+      "EN": "https://youtu.be/BZqbu_WKlEs",
+      "TH": "https://youtu.be/H0d9K-SB1bo",
+      "JP": "https://youtu.be/L7mKCF5L49A"
+    }
+  },
+  {
+    "id": 3,
+    "category": "Script Writing",
+    "title": "Primary Care in Thailand",
+    "industry": "Primary Care / International Healthcare",
+    "role": "Script Writing",
+    "summary": "Localized the story of Thailand primary care scenarios into multiple language versions for regional communication.",
+    "links": {
+      "CH": "https://youtu.be/e6xq1S-bIy4",
+      "JP": "https://youtu.be/bR9NZVkOTtk",
+      "ID": "https://youtu.be/u-ytJwCdpdg"
+    }
+  },
+  {
+    "id": 4,
+    "category": "Script Writing",
+    "title": "Smart OR Solution: Pingtung Veterans General Hospital",
+    "industry": "Smart Hospital / Operating Room Solution",
+    "role": "Script Writing",
+    "summary": "Translated smart operating room solution features into clear, scenario-based video scripts for hospital stakeholders.",
+    "links": {
+      "CH": "https://youtu.be/bzQBhAEo6w8",
+      "EN": "https://youtu.be/6vsZDMpAzHU",
+      "TH": "https://youtu.be/lSZRv5yPLm4",
+      "JP": "https://youtu.be/NSuGETBktd8"
+    }
+  },
+  {
+    "id": 5,
+    "category": "Script & Storyboard Planning",
+    "title": "Smart ePaper Bedside & Door Sign Solution for Wards",
+    "industry": "Smart Ward / ePaper / Hospital Operations",
+    "role": "Script & Storyboard Planning",
+    "summary": "Planned the story flow and visual logic for explaining smart ward ePaper bedside and door-sign use cases.",
+    "links": {
+      "EN": "https://youtu.be/Yv7Cp2lLDpc",
+      "TH": "https://youtu.be/vzEKLK7C5cw",
+      "JP": "https://youtu.be/si-_FBoBFBU"
+    }
+  },
+  {
+    "id": 6,
+    "category": "Script, Storyboard Development & Filming",
+    "title": "Smart Long-term Care: Residential Long-term Care Institution",
+    "industry": "Long-term Care / Smart Care Institution",
+    "role": "Script, Storyboard Development & Filming",
+    "summary": "Developed script and storyboard direction, supporting filming execution for a smart long-term care scenario.",
+    "links": {
+      "CH": "https://youtu.be/CTuGCXzdoxY",
+      "EN": "https://youtu.be/GPWlcA1tmQY",
+      "JP": "https://youtu.be/MO_ww3gd0GA",
+      "ID": "https://youtu.be/Rq8MDAh96CA"
+    }
+  },
+  {
+    "id": 7,
+    "category": "Script, Storyboard Development & Filming",
+    "title": "Telemedicine: Mudan Township × Kaohsiung Chang Gung Memorial Hospital",
+    "industry": "Telemedicine / Rural Healthcare / Hospital Collaboration",
+    "role": "Script, Storyboard Development & Filming",
+    "summary": "Built and executed a healthcare access story connecting rural care delivery with hospital telemedicine collaboration.",
+    "links": {
+      "CH": "https://youtu.be/j2l3QW0-cFY",
+      "EN": "https://youtu.be/Dh8l0OSGp9w",
+      "TH": "https://youtu.be/oFrjNT9_6BI"
+    }
+  },
+  {
+    "id": 8,
+    "category": "Script, Storyboard Development & Filming",
+    "title": "Automatic Bathing Device",
+    "industry": "Care Technology / Assistive Device",
+    "role": "Script, Storyboard Development & Filming",
+    "summary": "Supported end-to-end video storytelling for an automatic bathing device, focusing on care workflow and user value.",
+    "links": {
+      "EN": "https://youtu.be/MViMTtFK0bg"
+    }
+  },
+  {
+    "id": 9,
+    "category": "Script, Storyboard Development & Filming",
+    "title": "腦健康訓練：仁愛國中",
+    "industry": "Brain Health / Education / Training Program",
+    "role": "Script, Storyboard Development & Filming",
+    "summary": "Captured a brain health training case in an education setting, turning field activity into a clear case story.",
+    "links": {
+      "CH": "https://youtu.be/eZZvG3S8Zac"
+    }
+  },
+  {
+    "id": 10,
+    "category": "Script, Storyboard Development & Filming",
+    "title": "腦健康訓練：愛愛院",
+    "industry": "Brain Health / Senior Care / Training Program",
+    "role": "Script, Storyboard Development & Filming",
+    "summary": "Developed and filmed a care-setting case story for brain health training, emphasizing practical usage context.",
+    "links": {
+      "CH": "https://youtu.be/Ig-tJ9Zj6SA"
+    }
+  },
+  {
+    "id": 11,
+    "category": "Script, Storyboard Development & Filming",
+    "title": "腦健康訓練：起辰聯合治療所案例",
+    "industry": "Brain Health / Clinic Case / Rehabilitation",
+    "role": "Script, Storyboard Development & Filming",
+    "summary": "Produced a clinic-based case video showing how brain health training can be communicated through field scenarios.",
+    "links": {
+      "CH": "https://youtu.be/lx76xUWi_vU"
+    }
+  },
+  {
+    "id": 12,
+    "category": "Script, Storyboard Development & Filming",
+    "title": "毛孩復健有術：登羣動物醫院",
+    "industry": "Veterinary Rehabilitation / Animal Healthcare",
+    "role": "Script, Storyboard Development & Filming",
+    "summary": "Created a veterinary rehabilitation case story, extending healthcare video storytelling into animal care services.",
+    "links": {
+      "CH": "https://youtu.be/bzhrEV-jHrw"
+    }
+  }
+];
+
+    function getVideoId(url) {
+      const match = url.match(/youtu\.be\/([^?&]+)/);
+      return match ? match[1] : "";
+    }
+
+    function getThumbnail(project) {
+      const firstUrl = Object.values(project.links)[0];
+      const id = getVideoId(firstUrl);
+      return id ? `https://img.youtube.com/vi/${id}/hqdefault.jpg` : "";
+    }
+
+    function renderProjects(filter = "All") {
+      const grid = document.getElementById("portfolioGrid");
+      grid.innerHTML = "";
+
+      const visibleProjects = filter === "All"
+        ? projects
+        : projects.filter(project => project.category === filter);
+
+      visibleProjects.forEach(project => {
+        const card = document.createElement("article");
+        card.className = "work-card";
+
+        const langLinks = Object.entries(project.links)
+          .map(([lang, url]) => `<a href="${url}" target="_blank" rel="noopener noreferrer" aria-label="Watch ${project.title} in ${lang}">${lang}</a>`)
+          .join("");
+
+        const langPills = Object.keys(project.links)
+          .map(lang => `<span class="pill">${lang}</span>`)
+          .join("");
+
+        card.innerHTML = `
+          <div class="thumb-wrap">
+            <img class="thumb" src="${getThumbnail(project)}" alt="${project.title} YouTube thumbnail" loading="lazy">
+            <span class="card-index">${String(project.id).padStart(2, "0")}</span>
+          </div>
+          <div class="card-body">
+            <div class="pill-row">
+              <span class="pill role">${project.role}</span>
+              ${langPills}
+            </div>
+            <h3>${project.title}</h3>
+            <p class="industry">${project.industry}</p>
+            <p class="summary">${project.summary}</p>
+            <div class="lang-links">${langLinks}</div>
+          </div>
+        `;
+
+        grid.appendChild(card);
+      });
+    }
+
+    document.querySelectorAll(".filter-btn").forEach(button => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll(".filter-btn").forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+        renderProjects(button.dataset.filter);
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+    renderProjects();
+  </script>
+</body>
+</html>
